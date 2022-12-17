@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #anim {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        width: 400px;
+        height: 100px;
+      }
+      .animation-ball {
+        margin: 200px auto;
+        text-align: center;
+        height: 100px;
+      }
+      .ball {
+        text-align: center;
+        position: relative;
+        display: inline-block;
+        height: 0px;
+        width: 0px;
+        vertical-align: middle;
+        /* border-radius: 50%; */
+        background-color: rgb(0, 218, 116);
+        margin-left: 15px;
+        animation-name: load;
+        animation-timing-function: ease-in-out;
+        animation-duration: 0.6s;
+        animation-iteration-count: infinite;
+      }
+
+      .ball1 {
+        margin-left: 0;
+      }
+
+      @keyframes load {
+        /* 0% {
+          top: 0px;
+          height: 5px;
+          width: 5px;
+          background-color: rgb(0, 218, 116);
+        }
+        50% {
+          top: 50px;
+          height: 15px;
+          width: 15px;
+          background-color: rgb(251, 255, 0);
+        }
+        100% {
+          top: 0px;
+          height: 5px;
+          width: 5px;
+          background-color: rgb(0, 218, 116);
+        } */
+        0% {
+          height: 50px;
+          width: 5px;
+          background-color: rgb(0, 218, 116);
+        }
+        50% {
+          height: 100px;
+          background-color: rgb(251, 255, 0);
+        }
+        100% {
+          height: 50px;
+          width: 5px;
+          background-color: rgb(0, 218, 116);
+        }
+      }
+
+      .ball1 {
+        animation-delay: 0s;
+      }
+
+      .ball2 {
+        animation-delay: 0.05s;
+      }
+      .ball3 {
+        animation-delay: 0.1s;
+      }
+      .ball4 {
+        animation-delay: 0.15s;
+      }
+      .ball5 {
+        animation-delay: 0.2s;
+      }
+      .ball6 {
+        animation-delay: 0.25s;
+      }
+      .ball7 {
+        animation-delay: 0.3s;
+      }
+      .ball8 {
+        animation-delay: 0.35s;
+      }
+      .ball9 {
+        animation-delay: 0.4s;
+      }
+      .ball10 {
+        animation-delay: 0.45s;
+      }
+      .ball11 {
+        animation-delay: 0.5s;
+      }
+      .ball12 {
+        animation-delay: 0.55s;
+      }
+      /* .ball {
+        animation-delay: 2s;
+      } */
+    </style>
+  </head>
+  <body>
+    <div id="anim">
+      <div class="animation-ball anim1">
+        <div class="ball ball1"></div>
+        <div class="ball ball2"></div>
+        <div class="ball ball3"></div>
+        <div class="ball ball4"></div>
+        <div class="ball ball5"></div>
+        <div class="ball ball6"></div>
+        <div class="ball ball7"></div>
+        <div class="ball ball8"></div>
+        <div class="ball ball9"></div>
+        <div class="ball ball10"></div>
+        <div class="ball ball11"></div>
+        <div class="ball ball12"></div>
+      </div>
+    </div>
+  </body>
+</html>
